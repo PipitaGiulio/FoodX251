@@ -1,6 +1,6 @@
 # FoodX-251 Classification Project
 
-## 📌 Overview  
+## Overview  
 This project explores **food image classification** on the [FoodX-251 dataset](https://research.fb.com/foodx-251/) using two different approaches:  
 
 1. **Supervised Learning** – A custom CNN trained directly on labeled data.  
@@ -20,7 +20,7 @@ The goal is to compare both methods, highlight trade-offs, and analyze how super
 
 ---
 
-## 🧠 Models  
+## Models  
 
 ### 🔹 Supervised CNN  
 - **Architecture:** 5 convolutional blocks + fully connected layers (<5M parameters).  
@@ -39,7 +39,7 @@ The goal is to compare both methods, highlight trade-offs, and analyze how super
 
 ---
 
-## 📈 Results & Insights  
+## Results & Insights  
 - **Supervised Learning outperformed SSL** by ~10% accuracy.  
 - SSL features were useful but not optimal for fine-grained classification.  
 - Larger batch sizes, more training data, or alternative pretext tasks could improve SSL performance.  
@@ -47,7 +47,7 @@ The goal is to compare both methods, highlight trade-offs, and analyze how super
 
 ---
 
-## ⚙️ Requirements  
+## Requirements  
 - Python 3.8+  
 - PyTorch  
 - torchvision  
