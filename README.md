@@ -11,7 +11,7 @@ The goal is to compare both methods, highlight trade-offs, and analyze how super
 
 ---
 
-## 📊 Dataset  
+## Dataset  
 - **Source:** FoodX-251 (≈160K images, 251 classes).  
 - **Reduced Dataset:** ~130K images (80/10/10 train/val/test split using stratified sampling).  
 - **Preprocessing:**  
@@ -22,7 +22,7 @@ The goal is to compare both methods, highlight trade-offs, and analyze how super
 
 ## Models  
 
-### 🔹 Supervised CNN  
+### Supervised CNN  
 - **Architecture:** 5 convolutional blocks + fully connected layers (<5M parameters).  
 - **Optimizer:** SGD with momentum, weight decay, OneCycleLR scheduler.  
 - **Loss:** Cross-entropy.  
@@ -31,7 +31,7 @@ The goal is to compare both methods, highlight trade-offs, and analyze how super
   - Precision: **45.9%**  
   - Recall: **42.8%**
 
-### 🔹 Self-Supervised CNN (SimCLR-inspired)  
+### Self-Supervised CNN (SimCLR-inspired)  
 - **Pretext Task:** Contrastive learning with NT-Xent loss (batch size 512 via gradient accumulation).  
 - **Downstream Task:** Fine-tuning head with two strategies:  
   - **Only fully connected layers** → Test Accuracy: ~26%  
